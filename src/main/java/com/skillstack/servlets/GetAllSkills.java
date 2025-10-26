@@ -30,7 +30,8 @@ public class GetAllSkills extends HttpServlet {
             throws ServletException, IOException {
         response.setHeader("Access-Control-Allow-Origin", "https://skillstack-beige.vercel.app/");
         response.setHeader("Access-Control-Allow-Methods", "POST, GET, OPTIONS, PUT, DELETE");
-        response.setHeader("Access-Control-Allow-Headers", "Content-Type");
+        res.setHeader("Access-Control-Allow-Headers", "Content-Type, Authorization");
+        res.setHeader("Access-Control-Allow-Credentials", "true");
         response.setStatus(HttpServletResponse.SC_OK);
     }
     @Override
