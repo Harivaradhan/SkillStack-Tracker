@@ -64,7 +64,7 @@ public class UpdateServlet extends HttpServlet {
 	        Gson gson = new Gson();
 	        Skill skill = gson.fromJson(jsonData, Skill.class);
 
-	        // Update skill using DAO
+	        // Update skill using DAOb
 	        skillDAO.updateSkills(skill);
 
 	        // Send response
