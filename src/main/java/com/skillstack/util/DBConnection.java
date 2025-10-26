@@ -7,9 +7,9 @@ import java.sql.SQLException;
 
 public class DBConnection {
 
-    private static final String URL = "jdbc:mysql://localhost:3306/skillstack";
+    private static final String URL = "jdbc:mysql://switchback.proxy.rlwy.net:45788/railway";
     private static final String USERNAME = "root";  
-    private static final String PASSWORD = "root"; 
+    private static final String PASSWORD = "IGmINPWKMuaOXdxpCPRQVSSEJgIVzIjQ"; 
 
     private static Connection connection = null;
 
