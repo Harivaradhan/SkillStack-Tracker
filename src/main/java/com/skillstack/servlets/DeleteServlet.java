@@ -27,7 +27,7 @@ public class DeleteServlet extends HttpServlet {
     @Override
     protected void doOptions(HttpServletRequest request, HttpServletResponse response) 
             throws ServletException, IOException {
-        response.setHeader("Access-Control-Allow-Origin", "http://localhost:3000");
+        response.setHeader("Access-Control-Allow-Origin", "https://skillstack-beige.vercel.app/");
         response.setHeader("Access-Control-Allow-Methods", "POST, GET, OPTIONS, PUT, DELETE");
         response.setHeader("Access-Control-Allow-Headers", "Content-Type");
         response.setStatus(HttpServletResponse.SC_OK);
@@ -38,7 +38,7 @@ public class DeleteServlet extends HttpServlet {
             throws ServletException, IOException {
 
         // Allow CORS
-    	 response.setHeader("Access-Control-Allow-Origin", "http://localhost:3000");
+    	 response.setHeader("Access-Control-Allow-Origin", "https://skillstack-beige.vercel.app/");
 
         // Get skill id from request parameter
         String idParam = request.getParameter("id");
