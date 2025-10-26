@@ -32,7 +32,7 @@ public class UpdateServlet extends HttpServlet {
 	    @Override
 	    protected void doOptions(HttpServletRequest request, HttpServletResponse response) 
 	            throws ServletException, IOException {
-	        response.setHeader("Access-Control-Allow-Origin", "http://localhost:3000");
+	        response.setHeader("Access-Control-Allow-Origin", "https://skillstack-beige.vercel.app/");
 	        response.setHeader("Access-Control-Allow-Methods", "POST, GET, OPTIONS, PUT, DELETE");
 	        response.setHeader("Access-Control-Allow-Headers", "Content-Type");
 	        response.setStatus(HttpServletResponse.SC_OK);
@@ -43,7 +43,7 @@ public class UpdateServlet extends HttpServlet {
 	            throws ServletException, IOException {
 
 	        // Allow CORS
-	        response.setHeader("Access-Control-Allow-Origin", "http://localhost:3000");
+	        response.setHeader("Access-Control-Allow-Origin", "https://skillstack-beige.vercel.app/");
 
 	        // Handle preflight
 	        if ("OPTIONS".equalsIgnoreCase(request.getMethod())) {
