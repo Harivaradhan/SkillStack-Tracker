@@ -28,17 +28,21 @@ public class GetAllSkills extends HttpServlet {
     @Override
     protected void doOptions(HttpServletRequest request, HttpServletResponse response) 
             throws ServletException, IOException {
-        response.setHeader("Access-Control-Allow-Origin", "https://skillstack-beige.vercel.app/");
-        response.setHeader("Access-Control-Allow-Methods", "POST, GET, OPTIONS, PUT, DELETE");
-        res.setHeader("Access-Control-Allow-Headers", "Content-Type, Authorization");
-        res.setHeader("Access-Control-Allow-Credentials", "true");
-        response.setStatus(HttpServletResponse.SC_OK);
+        response.setHeader("Access-Control-Allow-Origin", "https://skillstack-beige.vercel.app");
+response.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS");
+response.setHeader("Access-Control-Allow-Headers", "Content-Type");
+response.setStatus(HttpServletResponse.SC_OK);
+
     }
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
-        response.setHeader("Access-Control-Allow-Origin", "https://skillstack-beige.vercel.app/");
+      response.setHeader("Access-Control-Allow-Origin", "https://skillstack-beige.vercel.app");
+response.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS");
+response.setHeader("Access-Control-Allow-Headers", "Content-Type");
+response.setStatus(HttpServletResponse.SC_OK);
+
 
 
         // Handle preflight request
