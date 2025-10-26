@@ -2,7 +2,7 @@
 FROM tomcat:10.1-jdk17-temurin
 
 # Copy your packaged WAR file to Tomcat's webapps directory
-COPY target/management.war /usr/local/tomcat/webapps/ROOT.war
+COPY target/SkillStack.war /usr/local/tomcat/webapps/ROOT.war
 
 # Expose the port Tomcat runs on
 EXPOSE 8080
